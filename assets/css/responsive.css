@@ -1,0 +1,422 @@
+/*===================================================
+    Media Query
+====================================================*/
+
+/* max-width 992px */
+@media (max-width: 992px) {
+    .padding {
+        padding: 80px 0;
+    }
+
+    .padding-top {
+        padding-top: 80px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 80px;
+    }
+
+    .sm-padding {
+        padding: 15px;
+    }
+
+    p br {
+        display: none;
+    }
+
+    span br {
+        display: none;
+    }
+
+    .default-btn {
+        padding: 0 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .section-heading br {
+        display: inherit;
+    }
+
+    .hero-element .shape-wrap {
+        width: 20%;
+        height: 80%;
+    }
+
+    .matches-list {
+        align-items: center;
+    }
+
+    .matches-list {
+        flex-direction: column;
+    }
+
+    .matches-list .participate-team {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .match-time h3 {
+        font-size: 50px;
+    }
+
+    .outside-spacing {
+        overflow: hidden;
+        padding: 0;
+        margin: 0 20px;
+    }
+
+    .team-content {
+        width: 90%;
+    }
+
+    .team-carousel .swiper-nav {
+        left: 5px;
+    }
+
+    .team-carousel .swiper-nav.swiper-next {
+        right: 5px;
+    }
+
+    .matches-thumb img {
+        max-width: 200px;
+    }
+
+    .latest-match-info h3 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .watch-info a {
+        font-size: 12px;
+    }
+
+    .cta-section .section-heading h2 {
+        font-size: 46px;
+        line-height: 56px;
+    }
+
+    .footer-section {
+        padding-top: 80px;
+    }
+
+    .copyright-wrap:before {
+        width: 60%;
+    }
+
+    .match-details-header {
+        width: 90%;
+    }
+
+    .match-details-header .vs h2 {
+        font-size: 50px;
+    }
+
+    .team-details-wrap {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .team-details-wrap .rating,
+    .team-details-wrap .social-list {
+        display: none;
+    }
+
+    .player-details .team-details-wrap {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .player-info {
+        gap: 30px;
+    }
+
+    .hero-section-2 {
+        height: 450px;
+    }
+}
+
+/* max-width 767px */
+@media all and (max-width: 767px) {
+    .padding {
+        padding: 60px 0;
+    }
+
+    .padding-top {
+        padding-top: 60px;
+    }
+
+    .padding-bottom {
+        padding-bottom: 60px;
+    }
+
+    .xs-padding {
+        padding: 15px;
+    }
+
+    .section-heading br,
+    p br {
+        display: none;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .header:before {
+        left: -80px;
+        bottom: -15px;
+    }
+
+    .header:after {
+        right: -80px;
+        bottom: -15px;
+    }
+
+    .footer-item .brand {
+        max-width: 150px;
+    }
+
+    .header .default-btn,
+    .header .search-icon {
+        display: none;
+    }
+
+    .hero-element .shape-wrap {
+        display: none;
+    }
+
+    .hero-content h4 {
+        letter-spacing: 5px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+    }
+
+    .participate-team h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .participate-team img {
+        width: 30%;
+    }
+
+    .participate-team:before {
+        height: 80px;
+    }
+
+    .match-info {
+        padding: 10px 20px;
+        bottom: -15px;
+    }
+
+    .matches-list .participate-team {
+        margin-bottom: 30px;
+    }
+
+    .match-time {
+        margin: 20px 0;
+    }
+
+    .match-time h3 {
+        font-size: 36px;
+    }
+
+    .team-thumb .shape.shape-1 {
+        left: 40%;
+        width: 170px;
+    }
+
+    .contact-form {
+        margin-left: 0;
+    }
+
+    .header:before,
+    .header:after {
+        display: none;
+    }
+
+    .page-header .page-header-shape .shape {
+        width: 80px;
+        height: 40px;
+    }
+
+    .page-header .page-header-shape .shape.center.back {
+        width: 170px;
+        height: 30px;
+    }
+
+    .cta-section .section-heading h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .section-heading-group {
+        display: block;
+    }
+
+    .section-heading-group .default-btn {
+        margin-top: 20px;
+    }
+
+    .latest-matches-list {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        clip-path: none;
+    }
+
+    .watch-info {
+        text-align: left;
+    }
+
+    .matches-thumb {
+        margin-bottom: 15px;
+    }
+
+    .watch-info {
+        margin-top: 15px;
+    }
+
+    .watch-info a i {
+        font-size: 20px;
+    }
+
+    .matches-thumb img {
+        max-width: 100%;
+    }
+
+    .sponsor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-header.single .page-header-info h2 {
+        line-height: 42px;
+    }
+
+    .footer-section {
+        padding-top: 60px;
+    }
+
+    .copyright-wrap:before {
+        width: 100%;
+    }
+
+    .footer-items>div:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+
+    .match-details-header h3 {
+        display: none;
+    }
+
+    .match-details-header img {
+        max-width: 100px;
+        left: -15px;
+    }
+
+    .match-details-header img.right {
+        right: -15px;
+    }
+
+    .match-details-header .vs {
+        width: 90px;
+        height: 80px;
+    }
+
+    .match-details-header .vs h2 {
+        font-size: 42px;
+    }
+
+    .page-header.match-details {
+        height: 300px;
+    }
+
+    .team-details-wrap {
+        padding: 0 20px;
+    }
+
+    .team-counter .counter-list .odometer-inside span {
+        font-size: 28px;
+        line-height: 1;
+    }
+
+    .player-info {
+        display: none;
+    }
+
+    .player-details .team-details-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .player-team {
+        justify-content: center;
+    }
+
+    .hero-section-2 {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .hero-section-2 .hero-content h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .hero-section-2 .hero-content {
+        padding: 50px 0 30px 0;
+    }
+
+    .shop-section .outside-spacing {
+        padding: 0;
+        margin: 0;
+    }
+
+    .shop-carousel .swiper-nav.swiper-prev {
+        left: 5px;
+    }
+
+    .shop-carousel .swiper-nav.swiper-next {
+        right: 5px;
+    }
+
+    .promo-section {
+        padding-top: 100px;
+    }
+
+    .play-btn .ripple,
+    .play-btn .ripple:before,
+    .play-btn .ripple:after,
+    .play-btn {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .play-btn svg {
+        width: 25px;
+    }
+}
+
+/* max-width 580px */
+@media all and (max-width: 580px) {
+    #scrollup {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .swiper-nav {
+        display: none;
+    }
+
+    .primary-header .header-logo {
+        max-width: 110px;
+        padding: 10px 0;
+    }
+}

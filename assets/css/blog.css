@@ -1,0 +1,698 @@
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1.0 - Grid Post
+*  2.0 - Classic Post
+*  3.0 - Post Category
+*  4.0 - Post Details
+*    4.1 - Post Navigation
+*    4.2 - Author Box
+*    4.3 - Comments
+*    4.4 - Comments Form
+*  5.0 - Sidebar Widget
+*    5.1 - Widget Title
+*    5.2 - Search
+*    5.3 - Category List
+*    5.4 - Thumbnail Posts
+*    5.5 - Tags
+*    5.6 - Pagination
+*/
+
+/*** 1.0 - Grid Post ***/
+
+.grid-post {
+    margin: -15px;
+}
+
+.post-card {
+    background-color: rgba(12, 12, 53, 0.9);
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 20%);
+}
+
+.post-card .post-thumb {
+    position: relative;
+}
+
+.post-content-wrap {
+    padding: 30px;
+}
+
+.post-meta {
+    margin-bottom: 10px;
+}
+
+.post-meta li {
+    font-family: "Oxanium", sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #f1d6c5;
+    display: inline-flex;
+    align-items: center;
+}
+
+.post-meta li:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.post-meta li i {
+    color: #9841ff;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.post-card .post-content h3 {
+    font-family: "Oxanium", sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -1px;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.post-card .post-content h3 a {
+    background-image: linear-gradient(#9841ff 0%, #9841ff 98%);
+    background-size: 0 4px;
+    background-repeat: no-repeat;
+    background-position: left 100%;
+}
+
+.post-card .post-content h3 a:hover {
+    background-size: 100% 4px;
+}
+
+.post-card .post-content h3 a {
+    color: #fff;
+}
+
+.post-card .post-content .read-more {
+    font-family: "Oxanium", sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #f1d6c5;
+    position: relative;
+    padding-left: 30px;
+}
+
+.post-card .post-content .read-more:before {
+    background-color: #9841ff;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 4px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.post-card .post-content .read-more:hover {
+    color: #9841ff;
+}
+
+/*** 2.0 - Classic Post ***/
+
+.classic-post .post-card .post-thumb {
+    min-height: 350px;
+}
+
+.classic-post .post-card .post-thumb img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.classic-post .post-card:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+
+/*** 3.0 - Post Category ***/
+.post-category {
+    background-image: linear-gradient(to right bottom, #f90cff, #e027ff, #c534ff, #a93eff, #8a44ff, #6560ff, #3c73ff, #0081ff, #009cff, #00b3ff, #00c6f5, #0cd7e8);
+    clip-path: polygon(90% 0, 100% 35%, 100% 100%, 0% 100%, 0 66%, 0 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-family: "Oxanium", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.post-category:hover {
+    color: #fff;
+}
+
+/*** 4.0 - Post Details ***/
+
+.post-details .post-thumb {
+    min-height: 350px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.post-details .post-thumb img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-details p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+blockquote {
+    background: linear-gradient(90deg, rgba(105, 85, 180, 0.1) 0%, rgba(105, 85, 180, 0.3) 50%, rgba(105, 85, 180, 0.1) 100%);
+    padding: 40px;
+    border: none;
+    border-left: 3px solid #9841ff;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+blockquote i.fas {
+    color: #9841ff;
+    display: block;
+    margin-bottom: 20px;
+}
+
+blockquote span {
+    font-family: "Oxanium", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #9841ff;
+    display: block;
+    margin-top: 10px;
+}
+
+.post-details-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    margin: 40px 0;
+}
+
+.post-details .tags li a {
+    margin: 0;
+}
+
+/*** 4.1 - Post Navigation ***/
+.post-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.post-navigation li:last-child {
+    text-align: right;
+}
+
+.post-navigation li a {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+
+.post-navigation li a:hover {
+    text-decoration: underline;
+}
+
+.post-navigation li a:hover>span {
+    text-decoration: none;
+}
+
+.post-navigation li a span {
+    font-family: "Oxanium", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a5a6aa;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.post-navigation li a span i {
+    color: #a5a6aa;
+    margin-right: 5px;
+}
+
+.post-navigation li:last-child a span i {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+/*** 4.2 - Author Box ***/
+.author-box {
+    background: linear-gradient(90deg, rgba(105, 85, 180, 0.1) 0%, rgba(105, 85, 180, 0.3) 50%, rgba(105, 85, 180, 0.1) 100%);
+    padding: 40px;
+    border: none;
+    border-radius: 2px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 80px 1fr;
+    grid-column-gap: 20px;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+
+.author-info p {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    margin-left: -3px;
+}
+
+.social-icon li {
+    display: inline-block;
+}
+
+.social-icon li a:hover {
+    color: #9841ff;
+}
+
+.social-icon li:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+/*** 4.3 - Comments ***/
+.comments-box {
+    margin-bottom: 40px;
+}
+
+.comment-title {
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+.comment-title:before {
+    background-color: #9841ff;
+    width: 50%;
+    height: 4px;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+}
+
+.comments-box .comment-inner {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-column-gap: 20px;
+}
+
+.comments-box .comment {
+    margin-bottom: 40px;
+}
+
+.comments-box .children {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.comments-box .comment-thumb img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.comments-meta h4 {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+}
+
+.comments-meta h4 span {
+    font-family: "Oxanium", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ddd;
+    display: block;
+}
+
+.comment-area p {
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.comment-area .reply {
+    font-family: "Oxanium", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #9841ff;
+}
+
+/*** 4.4 - Comments Form ***/
+.comment-form {
+    margin-top: -15px;
+}
+
+.comment-form .form-control {
+    background-color: rgba(12, 12, 53, 0.9);
+    height: 60px;
+    border-radius: 2px;
+    border: 2px solid rgba(152, 65, 255, 0.3);
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 20%);
+    outline: none;
+    color: #fff;
+}
+
+.comment-form .form-control.comment {
+    height: 150px;
+}
+
+#form-messages {
+    display: none;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#form-messages.alert-danger,
+#form-messages.alert-success {
+    display: block;
+}
+
+/*** 5.0 - Sidebar Widget ***/
+.sidebar-widget {
+    background: linear-gradient(90deg, rgba(105, 85, 180, 0.1) 0%, rgba(105, 85, 180, 0.3) 50%, rgba(105, 85, 180, 0.1) 100%);
+    padding: 30px;
+    border-radius: 2px;
+}
+
+.sidebar-widget:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+
+/*** 5.1 - Widget Title ***/
+.widget-title {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.widget-title h3 {
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    padding-bottom: 10px;
+    position: relative;
+    margin: 0;
+    line-height: 1;
+}
+
+.widget-title h3:before {
+    background-color: #9841ff;
+    width: 50%;
+    height: 4px;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+}
+
+/*** 5.2 - Search ***/
+.sidebar-widget .search-form {
+    position: relative;
+}
+
+.sidebar-widget .search-form .form-control {
+    background-color: rgba(12, 12, 53, 0.9);
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    height: 60px;
+    border: 2px solid rgba(152, 65, 255, 0.3);
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 20%);
+    padding-right: 40px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.sidebar-widget .search-form .search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    font-size: 15px;
+    color: #9841ff;
+}
+
+/*** 5.3 - Category List ***/
+.category-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.category-list li:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.category-list li a {
+    color: #ddd;
+}
+
+.category-list li a:hover {
+    color: #9841ff;
+    text-decoration: underline;
+}
+
+.category-list li span {
+    background-color: rgba(152, 65, 255, 0.3);
+    clip-path: polygon(0% 0%, 80% 0, 100% 20%, 100% 100%, 0 100%);
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    -webkit-transition: all .3s cubic-bezier(.165, .84, .44, 1);
+    transition: all .3s cubic-bezier(.165, .84, .44, 1);
+}
+
+.category-list li:hover span {
+    background-color: #9841ff;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/*** 5.4 - Thumbnail Posts ***/
+.thumb-post li {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.thumb-post li:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.thumb-post li .thumb {
+    flex-shrink: 0;
+    width: 80px;
+    height: 70px;
+    margin: 0 15px 0 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.thumb-post .thumb-post-info {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.thumb-post .thumb-post-info h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.thumb-post .thumb-post-info h3 a {
+    color: #ddd;
+}
+
+.thumb-post .thumb-post-info h3 a:hover {
+    text-decoration: underline;
+}
+
+.thumb-post .thumb-post-info .date {
+    font-weight: 600;
+    font-size: 12px;
+    font-family: "Oxanium", sans-serif;
+    text-transform: uppercase;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.thumb-post .thumb-post-info .date i {
+    color: #9841ff;
+    margin-right: 5px;
+}
+
+/*** 5.5 - Tags ***/
+.tags li {
+    display: inline-block;
+}
+
+.tags li a {
+    background-color: rgba(152, 65, 255, 0.3);
+    display: inline-block;
+    font-family: "Oxanium", sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #fff;
+    padding: 3px 15px;
+    margin: 0 3px 10px 0;
+    border-radius: 2px;
+}
+
+.tags li a:hover {
+    background-color: #9841ff;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/*** 5.6 - Pagination ***/
+.pagination-wrap li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.pagination-wrap li a {
+    background-color: rgba(152, 65, 255, 0.3);
+    clip-path: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
+    border: none;
+    color: #ddd;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    border-radius: 2px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pagination-wrap li a:hover,
+.pagination-wrap li a.active {
+    background-color: #9841ff;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.pagination-wrap li a.active {
+    transform: translateY(0);
+}
+
+/* max-width 992px */
+@media (max-width: 992px) {
+    .padding {
+        padding: 50px 0;
+    }
+
+    .sm-padding {
+        padding: 15px;
+    }
+
+    p br {
+        display: none;
+    }
+
+    span br {
+        display: none;
+    }
+
+    .default-btn {
+        padding: 0 30px;
+    }
+
+    .post-card .post-content h3 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+/* max-width 767px */
+@media all and (max-width: 767px) {
+    .grid-post {
+        margin: 0;
+    }
+
+    .padding {
+        padding: 50px 0;
+    }
+
+    .xs-padding {
+        padding: 15px;
+    }
+
+    p br {
+        display: none;
+    }
+
+    .author-box {
+        display: block;
+    }
+
+    .author-thumb {
+        margin-bottom: 20px;
+    }
+}
+
+/* max-width 580px */
+@media all and (max-width: 580px) {
+    #scrollup {
+        bottom: 20px;
+        right: 20px;
+    }
+}
